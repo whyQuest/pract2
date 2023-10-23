@@ -9,7 +9,7 @@ namespace практ2
 {
     internal class mass1
     {
-        private int[] mass;
+        int[] mass;
 
        public mass1()
         {
