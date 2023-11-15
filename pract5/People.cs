@@ -26,6 +26,7 @@ namespace pract5
             SortWeight sortByAge = new SortWeight();
             people.Sort(sortByAge);
         }
+
         public void WriteFile(string fileName)
         {
             FileStream fileStream = new FileStream(fileName, FileMode.Create, FileAccess.Write, FileShare.None);
@@ -34,9 +35,10 @@ namespace pract5
         }
         public void ReadFile(string fileName)
         {
-            FileStream fileStream = new FileStream(fileName, FileMode.Create, FileAccess.Write, FileShare.None);
-            people = serializer.Deserialize(fileStream) as List<Bagazh>;
-            fileStream.Close();
+            using (FileStream fileStream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.None))
+            {
+                people = serializer.Deserialize(fileStream) as List<Bagazh>;
+            }
         }
     }
 }

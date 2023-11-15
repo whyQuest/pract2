@@ -14,7 +14,7 @@ namespace pract5
     {
 
         People people = new People();
-        string path = "data.txt";
+        string path = "C:\\Users\\админ\\source\\repos\\практ2\\pract5\\data.txt";
         public void Show(DataGridView dg)
         {
             dg.Rows.Clear();
@@ -59,14 +59,28 @@ namespace pract5
 
         private void button4_Click(object sender, EventArgs e)
         {
-            people.WriteFile(path);
-            MessageBox.Show("Дані записані!");
+            try
+            {
+                people.WriteFile(path);
+                MessageBox.Show("Дані записані!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Помилка!");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            people.ReadFile(path);
-            Show(dataGridView2);
+            try
+            {
+                people.ReadFile(path);
+                Show(dataGridView2);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Помилка!");
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)

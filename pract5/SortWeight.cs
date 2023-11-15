@@ -11,8 +11,8 @@ namespace pract5
     {
         public int Compare(Bagazh x, Bagazh y)
         {
-            if (x.Weight < y.Weight) return -1;
-            if (x.Weight > y.Weight) return 1;
+            if (x.Count > y.Count) return -1;
+            if (x.Count < y.Count) return 1;
             return 0;
         }
     }

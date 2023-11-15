@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ArrayOfBagazh xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Bagazh>
+    <PIIB>ab</PIIB>
+    <Count>3211</Count>
+    <Weight>122</Weight>
+  </Bagazh>
+  <Bagazh>
+    <PIIB>abcd</PIIB>
+    <Count>335</Count>
+    <Weight>4511</Weight>
+  </Bagazh>
+  <Bagazh>
+    <PIIB>abcde</PIIB>
+    <Count>330</Count>
+    <Weight>4511</Weight>
+  </Bagazh>
+  <Bagazh>
+    <PIIB>a</PIIB>
+    <Count>322</Count>
+    <Weight>231</Weight>
+  </Bagazh>
+  <Bagazh>
+    <PIIB>abc</PIIB>
+    <Count>33</Count>
+    <Weight>45</Weight>
+  </Bagazh>
+</ArrayOfBagazh>
